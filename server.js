@@ -3,6 +3,7 @@ const express = require("express")
 const logger = require("morgan")
 const mongoose = require("mongoose");
 
+// server setup
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -14,8 +15,10 @@ app.use(express.json());
 app.use(express.static("public"));
 
 const db=require("./models")
+// mongoose server setup
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {useUnifiedTopology: true, useNewUrlParser: true});
 
+// require routes connection and pass in app parameter
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 // const workoutSeed=require("./seeders/seed.js")

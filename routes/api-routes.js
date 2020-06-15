@@ -3,19 +3,19 @@ const db = require("../models")
 
 module.exports=function(app){
 
+// finds all the workouts in the database
 app.get("/api/workouts", function(req, res){
     db.Workout.find({}, function(err,data){
         if(err){
             console.log(err)
         }else{
-            console.log(data)
             res.json(data)
         }
     });
 });
 
+// finds all the current workouts sorts them descending and grabs the id of the latest workout to update
 app.put("/api/workouts/:id", function(req, res){
-    
     db.Workout.find({},null,{sort:{date:-1}},function(err,data){
         if(err){
             console.log(err)
@@ -26,13 +26,12 @@ app.put("/api/workouts/:id", function(req, res){
             console.log(err)
         }else{
             res.json(data)
-            console.log(data)
         }
     })
     });
 })
 
-
+// creates a new workout and add to database
 app.post("/api/workouts", function(req, res){
     db.Workout.create(req.body), function(err,data){
         if (err){
@@ -46,7 +45,7 @@ app.post("/api/workouts", function(req, res){
 
 
 
-
+// finds all the workouts in database
 app.get("/api/workouts/range", function(req, res){
     db.Workout.find({}, function(err, data){
         if(err){
