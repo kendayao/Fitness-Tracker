@@ -146,4 +146,4 @@ db.Workout.deleteMany({})
     // process.exit(1);
   });
 
-  module.exports=workoutSeed;
+  // module.exports=workoutSeed;
