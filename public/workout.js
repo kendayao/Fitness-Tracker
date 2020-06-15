@@ -6,6 +6,7 @@ async function initWorkout() {
       .querySelector("a[href='/exercise?']")
       .setAttribute("href", `/exercise?id=${lastWorkout._id}`);
 
+      // for each loop to get total of exercise duration
       durationArry=[]
       let totalDuration;
       lastWorkout.exercises.forEach(function(exercise){
