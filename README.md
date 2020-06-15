@@ -62,6 +62,6 @@ For any questions, please contact kendayao at kendayao@gmail.com
 
 ## Deployed Application URL
 
-
+Deployed application link: https://fast-meadow-17750.herokuapp.com/
 
 <img src="public/images/fitness-tracker.png" width="550" height="300">
