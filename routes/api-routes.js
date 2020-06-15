@@ -14,8 +14,13 @@ app.get("/api/workouts", function(req, res){
 });
 
 app.put("/api/workouts/:id", function(req, res){
-    console.log(req.params.id)
-    db.Workout.updateOne({id:req.params.id}, {$push: {exercises:req.body}}, { new: true }, function(err,data){
+    
+    db.Workout.find({},null,{sort:{date:-1}},function(err,data){
+        if(err){
+            console.log(err)
+        }else
+        console.log(data[0]._id)
+    db.Workout.updateOne({_id:data[0]._id}, {$push: {exercises:req.body}}, function(err,data){
         if(err){
             console.log(err)
         }else{
@@ -23,7 +28,7 @@ app.put("/api/workouts/:id", function(req, res){
             console.log(data)
         }
     })
-
+    });
 })
 
 
@@ -35,7 +40,7 @@ app.post("/api/workouts", function(req, res){
             res.json(data)
         }
     }
-
+    
 })
 
 
