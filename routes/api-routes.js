@@ -59,21 +59,5 @@ app.get("/api/workouts/range", function(req, res){
 })
 
 
-
-
-
-
-
-
-
 }
 
-
-// app.get("/api/workouts", function(req, res){
-//     db.Workout.find({}).then(function(workout){
-//         res.json(workout)
-//     })
-//     .catch(function(err){
-//         res.json(err)
-//     })
-// });
