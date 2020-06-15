@@ -1,3 +1,4 @@
+// require Workout model
 const db = require("../models")
 
 module.exports=function(app){
