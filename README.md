@@ -2,11 +2,12 @@
 
 ## Description
 
-This is a fitness-tracker application. Users can create a workout regimen, add excerices to a current regimen, and view workout stats. This application was created using MongoDB, Mongoose, Node, Express, Javascript, Jquery, HTML, and CSS
+Fitness-Tracker is a web appilcation that allows users to create a workout regimen, add excerices to a current regimen, and view workout stats. 
 
 ## Table of Contents
 
 * [Description](#description)
+* [Technology](#technology)
 * [User Story](#user-story)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -16,6 +17,16 @@ This is a fitness-tracker application. Users can create a workout regimen, add e
 * [Questions](#questions)
 * [Deployed Application URL](#deployed-application-URL)
 
+## Technology
+
+- MongoDB
+- Mongoose
+- Node
+- Express
+- JavaScript
+- jQuery
+- HTML
+- CSS
 
 
 ## User Story
@@ -63,5 +74,7 @@ For any questions, please contact kendayao at kendayao@gmail.com
 ## Deployed Application URL
 
 Deployed application link: https://fast-meadow-17750.herokuapp.com/
+
+Video demo link: 
 
 <img src="public/images/fitness-tracker.png" width="550" height="300">
