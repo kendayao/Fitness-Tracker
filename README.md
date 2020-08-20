@@ -2,7 +2,7 @@
 
 ## Description
 
-Fitness-Tracker is a web appilcation that allows users to create a workout regimen, add excerices to a current regimen, and view workout stats. 
+Fitness-Tracker is a web application that allows users to create a workout regimen, add exercises to a current regimen, and view workout stats.
 
 ## Table of Contents
 
